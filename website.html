@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manjunath</title>
+    <link rel="stylesheet" href="web.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <img src="bms.svg" class="svg-logo" alt="" />
+      
+      <span>
+        <img class="svg svg-search" src="search.svg" alt="" />
+        <input type="search" name="search" id="" width="50%" placeholder="Search for Movies,Events,Plays,Sports and Activities"/>
+      </span>
+      <div class="signin">
+        <select name="city" id="">
+          <option value="hyderabad">Hyderabad</option>
+          <option value="Anantapur">Anantapur</option>
+          <option value="Bangalore">Bangalore</option>
+        </select>
+        <input type="button" value="Sign In" />
+        <button>
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="nav-tools">
+      <div class="category">
+        <p>Movies</p>
+        <p>Stream</p>
+        <p>Events</p>
+        <p>Plays</p>
+        <p>Sports</p>
+        <p>Activities</p>
+      </div>
+      <div class="offers">
+        <p>ListYourShow</p>
+        <p>Corporates</p>
+        <p>Offers</p>
+        <p>Giftcards</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="slider">
+        <div class="images">
+          <img src="bms.avif" alt="" />
+          <img src="bms1.jpg" alt="" />
+          <img src="bms2.jpg" alt="" />
+          <img src="bms3.avif" alt="" />
+        </div>
+        <div class="next">
+          <button>
+            <img class="svg svg-left" src="previous.svg" alt="" />
+          </button>
+          <button><img class="svg svg-right" src="next.svg" alt="" /></button>
+        </div>
+      </div>
+    </div>
+    <div class="rmovies">
+      <h1>Recommended Movies</h1>
+      <div class="cards">
+        <div class="imgcards">
+          <img src="bbb1.avif" alt="" />
+          <h3>Mufasa : The Lion King</h3>
+          <p>Adventure/Action/Drama</p>
+        </div>
+        <div class="imgcards">
+          <img src="bbb2.jpg" alt="" />
+          <h3>Ramayana: The Legend Of Prince Rama</h3>
+          <p>Adventure/Anime/Drama</p>
+        </div>
+        <div class="imgcards">
+          <img src="bbb3.jpg" alt="" />
+          <h3>Emergency</h3>
+          <p>Drama/Historical</p>
+        </div>
+        <div class="imgcards">
+          <img src="bbb4.jpg" alt="" />
+          <h3>Vidaamuyarchi</h3>
+          <p>Action/Thriller/Mystery</p>
+        </div>
+        <div class="imgcards">
+          <img src="bbb5.jpg" alt="" />
+          <h3>Pushpa:The Rule</h3>
+          <p>Action/Thriller</p>
+        </div>
+        <div class="imgcards">
+          <img src="bbb6.jpg" alt="" />
+          <h3>Salaar:Part 1 CeaseFire</h3>
+          <p>Action/Drama/Thriller</p>
+        </div>
+        <div class="imgcards">
+          <img src="bbb7.jpg" alt="" />
+          <h3>Kalki:2898AD</h3>
+          <p>Sci-fi/Action/Thriller</p>
+        </div>
+        <div class="imgcards">
+          <img src="bbb8.jpg" alt="" />
+          <h3>Spirit</h3>
+          <p>Action/Adventure/Thriller</p>
+        </div>
+        <div class="imgcards">
+          <img src="bbb9.jpg" alt="" />
+          <h3>Saaho</h3>
+          <p>Action/Romantic/Thriller</p>
+        </div>
+        <div class="imgcards">
+          <img src="bbb10.jpg" alt="" />
+          <h3>The Raja Saab</h3>
+          <p>Comedy/Horror/Romantic</p>
+        </div>
+      </div>
+      <div class="btn-next">
+        <button onclick="next(movies)"><img class="svg" src="next.svg" alt=""></button>
+      </div>
+      <div class="btn-previous">
+        <button onclick="prev(movies)"><img src="previous.svg" alt=""></button>
+      </div>
+      <div class="banner">
+        <img src="book my show banner.avif" alt="">
+      </div>
+      <div class="events">
+        <h3>The Best Of Live Events</h3>
+        <div class="eventimages">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-amusement-park-collection-202404190106.png" alt="">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-OTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png" alt="">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-kids-collection-202404190106.png" alt="">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTkwKyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png" alt="">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NjUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png" alt="">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/upskill-collection-202211140440.png" alt="">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/food-drinks-collection-202211140440.png" alt="">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/interactive-games-collection-202211140440.png" alt="">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NjArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/arts-crafts-collection-202211140440.png" alt="">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-ODUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="premiere">
+      <div class="nav-premiere">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-banner-web-collection-202208191200.png" alt="">
+      </div>
+      <div class="premiere-movies">
+        <h3>Premieres</h3>
+        <p>Brand new releases every Friday</p>
+        <div class="p-movies">
+          <div class="img-cards">
+            <img src="bbb6.jpg" alt="" />
+            <h3>Salaar:Part 1 CeaseFire</h3>
+            <p>Action/Drama/Thriller</p>
+          </div>
+          <div class="img-cards">
+            <img src="bbb8.jpg" alt="" />
+            <h3>Spirit</h3>
+            <p>Action/Adventure/Thriller</p>
+          </div>
+          <div class="img-cards">
+            <img src="bbb7.jpg" alt="" />
+            <h3>Kalki:2898AD</h3>
+            <p>Sci-fi/Action/Thriller</p>
+          </div>
+          <div class="img-cards">
+            <img src="bbb9.jpg" alt="" />
+            <h3>Saaho</h3>
+            <p>Action/Romantic/Thriller</p>
+          </div>
+          <div class="img-cards">
+            <img src="bbb10.jpg" alt="" />
+            <h3>The Raja Saab</h3>
+            <p>Comedy/Horror/Romantic</p>
+          </div>
+          <div class="img-cards">
+            <img src="bbb5.jpg" alt="" />
+            <h3>Pushpa:The Rule</h3>
+            <p>Action/Thriller</p>
+          </div>
+          <div class="img-cards">
+            <img src="bbb1.avif" alt="" />
+          <h3>Mufasa : The Lion King</h3>
+          <p>Adventure/Action/Drama</p>
+          </div>
+          <div class="img-cards">
+            <img src="bbb2.jpg" alt="" />
+          <h3>Ramayana: The Legend Of Prince Rama</h3>
+          <p>Adventure/Anime/Drama</p>
+          </div>
+          <div class="img-cards">
+            <img src="bbb3.jpg" alt="" />
+            <h3>Emergency</h3>
+            <p>Drama/Historical</p>
+          </div>
+          <div class="img-cards">
+            <img src="bbb4.jpg" alt="" />
+            <h3>Vidaamuyarchi</h3>
+            <p>Action/Thriller/Mystery</p>
+          </div>
+        </div>
+        <div class="pri-btn-next">
+          <button onclick="next(premiere)"><img class="svg" src="next.svg" alt=""></button>
+        </div>
+        <div class="pri-btn-previous">
+          <button onclick="prev(premiere)"><img src="previous.svg" alt=""></button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="contact">
+        <div class="partner">
+          <h3 style="display: inline;">List Your Show</h3>
+          <p>Got a show,event,activity or a great experience? Partner with us and get listed on BookMyShow</p>
+        </div>
+        <input type="button" value="Contact Today">
+      </div>
+      <div class="costumercare">
+        <figure>
+          <img class="svg" src="call.svg" alt="">
+          <figcaption>24/7 Customer Service</figcaption>
+        </figure>
+        <figure>
+        <img class="svg" src="ticket.svg" alt="">
+          <figcaption>Resend Booking Confirmation</figcaption>
+        </figure>
+        <figure>
+        <img class="svg" src="message.svg" alt="">
+          <figcaption>
+            subscribe to the news letter
+          </figcaption>
+        </figure>
+      </div>
+      <div class="copyright">
+        <div></div>
+        <img src="bms.copyright.svg" class="copyright-img" alt="">
+        <div></div>
+      </div>
+    </footer>
+      <div class="mobile-version">
+      <div class="mv-nav">
+        <div class="location">
+          <h1>It All start's Here!</h1>
+          <a href="location">Anantapur></a>
+        </div>
+        <button>Use App</button>
+        <img class="svg" src="search.svg" alt="">
+      </div>
+      <div class="mv-tools">
+        <p>Movies</p>
+        <p>HSBC<br>lounge</p>
+        <p>Sports</p>
+        <p>Music <br>shows</p>
+        <p>Stream</p>
+      </div>
+      <div class="mv-slider">
+        <div class="mv-images images">
+          <img src="bms.avif" alt="" />
+          <img src="bms1.jpg" alt="" />
+          <img src="bms2.jpg" alt="" />
+          <img src="bms3.avif" alt="" />
+        </div>
+        <div class="mv-next">
+          <button>
+            <img class="svg svg-left" src="previous.svg" alt="" />
+          </button>
+          <button><img class="svg svg-right" src="next.svg" alt="" /></button>
+        </div>
+      </div>
+      <div class="mv-banner">
+        <img src="book my show banner.avif" alt="">
+      </div>
+      <div class="mv-poster">
+        <img src="bms2.jpg" alt="" >
+      </div>
+      <div class="mv-footer">
+        <div class="menu-icons">
+          <img src="home.svg" alt="">
+          <p>Home</p>
+        </div>
+        <div class="menu-icons">
+          <img src="video.png" alt="">
+          <p>Movies</p>
+        </div>
+        <div class="menu-icons">
+          <img src="events.png" alt="">
+          <p>Live Events</p>
+        </div>
+        <div class="menu-icons">
+          <img src="profile.svg" alt="">
+          <p>Profile</p>
+        </div>
+      </div>
+      <div class="mv-premiere-movies">
+        <h3>Premieres</h3>
+        <p>Brand new releases every Friday</p>
+        <div class="mv-p-movies">
+          <div class="mv-img-cards">
+            <img src="bbb6.jpg" alt="" />
+            <h3>Salaar:Part 1 CeaseFire</h3>
+            <p>Action/Drama/Thriller</p>
+          </div>
+          <div class="mv-img-cards">
+            <img src="bbb8.jpg" alt="" />
+            <h3>Spirit</h3>
+            <p>Action/Adventure/Thriller</p>
+          </div>
+          <div class="mv-img-cards">
+            <img src="bbb7.jpg" alt="" />
+            <h3>Kalki:2898AD</h3>
+            <p>Sci-fi/Action/Thriller</p>
+          </div>
+          <div class="mv-img-cards">
+            <img src="bbb9.jpg" alt="" />
+            <h3>Saaho</h3>
+            <p>Action/Romantic/Thriller</p>
+          </div>
+          <div class="mv-img-cards">
+            <img src="bbb10.jpg" alt="" />
+            <h3>The Raja Saab</h3>
+            <p>Comedy/Horror/Romantic</p>
+          </div>
+          <div class="mv-img-cards">
+            <img src="bbb5.jpg" alt="" />
+            <h3>Pushpa:The Rule</h3>
+            <p>Action/Thriller</p>
+          </div>
+          <div class="mv-img-cards">
+            <img src="bbb1.avif" alt="" />
+          <h3>Mufasa : The Lion King</h3>
+          <p>Adventure/Action/Drama</p>
+          </div>
+          <div class="mv-img-cards">
+            <img src="bbb2.jpg" alt="" />
+          <h3>Ramayana: The Legend Of Prince Rama</h3>
+          <p>Adventure/Anime/Drama</p>
+          </div>
+          <div class="mv-img-cards">
+            <img src="bbb3.jpg" alt="" />
+            <h3>Emergency</h3>
+            <p>Drama/Historical</p>
+          </div>
+          <div class="mv-img-cards">
+            <img src="bbb4.jpg" alt="" />
+            <h3>Vidaamuyarchi</h3>
+            <p>Action/Thriller/Mystery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="web.js"></script>
+  </body>
+</html>
